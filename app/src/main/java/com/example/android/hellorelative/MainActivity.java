@@ -21,6 +21,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.example.android.hellotoast.R;
 
 /**
  * Displays two buttons and a text view.

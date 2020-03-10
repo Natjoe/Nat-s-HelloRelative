@@ -22,17 +22,17 @@ limitations under the License. -->
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.android.hellotoast.MainActivity">
+    tools:context="com.example.android.hellorelative.MainActivity">
 
     <Button
         android:id="@+id/button_toast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:background="@color/colorPrimary"
         android:onClick="showToast"
         android:text="@string/button_label_toast"
-        android:textColor="@android:color/white"
-        android:textSize="15sp" />
+        android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/button_count"
@@ -43,7 +43,6 @@ limitations under the License. -->
         android:onClick="countUp"
         android:text="@string/button_label_count"
         android:textColor="@android:color/white"
-        android:textSize="14sp"
         android:layout_below="@+id/button_toast"/>
 
     <TextView
@@ -58,6 +57,7 @@ limitations under the License. -->
         android:gravity="center"
         android:text="@string/count_initial_value"
         android:textColor="@color/colorPrimary"
+        android:layout_alignParentTop="true"
         android:textSize="200sp"
         android:textStyle="bold" />
 
